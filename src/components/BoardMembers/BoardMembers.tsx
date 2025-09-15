@@ -12,25 +12,25 @@ const boardMembers: BoardMember[] = [
   {
     name: "HE. Dr. Omniyat Mohammed Al-Hajri",
     title: "Vice Chairwoman",
-    image: "/fbma-1.png",
+    image: "/fbma.png",
     bgColor: "bg-[#ee7120]",
   },
   {
     name: "HE Noura Khalifa Al Suwaidi",
     title: "Board Member",
-    image: "/suwaidi-1.png",
+    image: "/suwaidi.png",
     bgColor: "bg-[#ee7120]",
   },
   {
     name: "HE Talal Mustafa Al Hashemi",
     title: "Board Member",
-    image: "/talal-mustafa-al-hashemi-1.png",
+    image: "/talal-mustafa-al-hashemi.png",
     bgColor: "bg-[#ee7120]",
   },
   {
     name: "Ms.Shamsa Saif Alhanaee",
     title: "Board Member",
-    image: "/shamsa-saif-alhanaee-1.png",
+    image: "/shamsa-saif-alhanaee.jpg",
     bgColor: "bg-[#ee7120]",
   },
 ];

@@ -18,19 +18,19 @@ import { NewsletterPage } from './screens/NewsletterPage/NewsletterPage';
 import { TermsPage } from './screens/TermsPage/TermsPage';
 import { PrivacyPage } from './screens/PrivacyPage/PrivacyPage';
 
+// 1. Import your Header component
 import { Sidebar } from './components/Sidebar/Sidebar';
+// 2. (Optional) Import your LanguageProvider if you want language support
 import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   return (
-    <LanguageProvider>
+    <LanguageProvider> {/* Uncomment if using language context */}
       <Router>
-        <div className="flex">
-          {/* Sidebar always present */}
+        <div className="App">
+          {/* 3. Place Header above Routes so it shows on every page */}
           <Sidebar />
-
-          {/* Page content */}
-          <div className="flex-1 min-h-screen bg-white">
+          <div style={{ paddingTop: '80px' }}>
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
@@ -53,7 +53,7 @@ function App() {
           </div>
         </div>
       </Router>
-    </LanguageProvider>
+     </LanguageProvider>
   );
 }
 

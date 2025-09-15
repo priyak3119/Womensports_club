@@ -1,4 +1,3 @@
-import React from "react";
 import { EventsHero } from "../../components/EventsHero/EventsHero";
 import { UpcomingEvents } from "../../components/UpcomingEvents/UpcomingEvents";
 import { EventsGallery } from "../../components/EventsGallery/EventsGallery";

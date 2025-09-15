@@ -8,7 +8,7 @@ export const EducationHero: React.FC = () => {
       <img
         className="w-full h-full object-cover"
         alt="Education Hero Background"
-        src="/image-4.png"
+        src="/image.png"
       />
       
       {/* Content Card */}

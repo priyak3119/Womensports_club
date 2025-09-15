@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../../components/Header/Sidebar";
+import { Header } from "../../components/Sidebar/Sidebar";
 import { EducationHero } from "../../components/EducationHero/EducationHero";
 import { EducationPrograms } from "../../components/EducationPrograms/EducationPrograms";
 import { ResearchInitiatives } from "../../components/ResearchInitiatives/ResearchInitiatives";

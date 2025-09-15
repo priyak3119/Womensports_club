@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Footer } from "../../components/Footer/Footer";
 
 export const PartnersPage = (): JSX.Element => {
