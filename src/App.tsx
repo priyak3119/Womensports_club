@@ -18,31 +18,42 @@ import { NewsletterPage } from './screens/NewsletterPage/NewsletterPage';
 import { TermsPage } from './screens/TermsPage/TermsPage';
 import { PrivacyPage } from './screens/PrivacyPage/PrivacyPage';
 
+// 1. Import your Header component
+import { Sidebar } from './components/Header/Sidebar';
+// 2. (Optional) Import your LanguageProvider if you want language support
+import { LanguageProvider } from './context/LanguageContext';
+
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/education" element={<EducationPage />} />
-          <Route path="/events" element={<EventsPage />} />
-          <Route path="/newsroom" element={<NewsroomPage />} />
-          <Route path="/partners" element={<PartnersPage />} />
-          <Route path="/highlights" element={<HighlightsPage />} />
-          <Route path="/careers" element={<CareersPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/faq" element={<FAQPage />} />
-          <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/event/:id" element={<EventDetailPage />} />
-          <Route path="/program/:id" element={<ProgramDetailPage />} />
-          <Route path="/register" element={<RegistrationPage />} />
-          <Route path="/newsletter" element={<NewsletterPage />} />
-          <Route path="/terms" element={<TermsPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
-        </Routes>
-      </div>
-    </Router>
+    <LanguageProvider> {/* Uncomment if using language context */}
+      <Router>
+        <div className="App">
+          {/* 3. Place Header above Routes so it shows on every page */}
+          <Sidebar />
+          <div style={{ paddingTop: '80px' }}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/education" element={<EducationPage />} />
+              <Route path="/events" element={<EventsPage />} />
+              <Route path="/newsroom" element={<NewsroomPage />} />
+              <Route path="/partners" element={<PartnersPage />} />
+              <Route path="/highlights" element={<HighlightsPage />} />
+              <Route path="/careers" element={<CareersPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/faq" element={<FAQPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
+              <Route path="/event/:id" element={<EventDetailPage />} />
+              <Route path="/program/:id" element={<ProgramDetailPage />} />
+              <Route path="/register" element={<RegistrationPage />} />
+              <Route path="/newsletter" element={<NewsletterPage />} />
+              <Route path="/terms" element={<TermsPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+            </Routes>
+          </div>
+        </div>
+      </Router>
+     </LanguageProvider>
   );
 }
 

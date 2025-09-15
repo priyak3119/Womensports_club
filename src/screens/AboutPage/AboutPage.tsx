@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../../components/Header/Header";
+import { Header } from "../../components/Header/Sidebar";
 import { HeroSection } from "../../components/HeroSection/HeroSection";
 import { ChairmanSection } from "../../components/ChairmanSection/ChairmanSection";
 import { BoardMembers } from "../../components/BoardMembers/BoardMembers";
@@ -9,7 +9,7 @@ import { Footer } from "../../components/Footer/Footer";
 export const AboutPage = (): JSX.Element => {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      {/* <Header /> */}
       <main className="relative">
         <HeroSection />
         <ChairmanSection />

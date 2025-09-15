@@ -1,11 +1,12 @@
 import React from "react";
-import { Header } from "../../components/Header/Header";
+
 import { Footer } from "../../components/Footer/Footer";
 
 export const PartnersPage = (): JSX.Element => {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+    
+    
       <main className="relative py-24">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold text-[#ee7120] mb-6">Our Partners</h1>
