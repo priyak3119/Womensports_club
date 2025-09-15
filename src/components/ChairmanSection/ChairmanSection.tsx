@@ -11,7 +11,7 @@ export const ChairmanSection: React.FC = () => {
             <img
               className="w-full max-w-[381px] h-[488px] object-cover rounded-lg shadow-lg mx-auto"
               alt="Sheikha Fatima Bint Hazza Bin Zayed Al Nahyan"
-              src="/image-5.png"
+              src="/fbma.png"
             />
           </div>
 

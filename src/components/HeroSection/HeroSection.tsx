@@ -8,7 +8,7 @@ export const HeroSection: React.FC = () => {
       <img
         className="w-full h-full object-cover"
         alt="Hero Background"
-        src="/image-4.png"
+        src="/About_page.jpg"
       />
       
       {/* Content Card */}
