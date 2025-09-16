@@ -1,4 +1,4 @@
-import React from "react";
+
 import { HeroSection } from "../../components/HeroSection/HeroSection";
 import { ChairmanSection } from "../../components/ChairmanSection/ChairmanSection";
 import { BoardMembers } from "../../components/BoardMembers/BoardMembers";

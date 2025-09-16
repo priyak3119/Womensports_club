@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HomePage } from './screens/HomePage/HomePage';
 import { AboutPage } from './screens/AboutPage/AboutPage';
@@ -21,6 +20,8 @@ import { PrivacyPage } from './screens/PrivacyPage/PrivacyPage';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { LanguageProvider } from './context/LanguageContext';
 
+import FeedbackWidget from "./components/FeedbackWidget/FeedbackWidget";
+
 function App() {
   return (
     <LanguageProvider>
@@ -28,7 +29,7 @@ function App() {
         <div className="flex">
           {/* Sidebar always present */}
           <Sidebar />
-
+          <FeedbackWidget />
           {/* Page content */}
           <div className="flex-1 min-h-screen bg-white">
             <Routes>
